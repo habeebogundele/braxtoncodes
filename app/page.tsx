@@ -13,7 +13,6 @@ import {
   Settings,
   Zap,
   Award,
-  TrendingUp,
   Users,
   CheckCircle,
   MessageSquare,
@@ -350,35 +349,6 @@ export default function Home() {
     {
       title: "Long-Term Agile Support",
       desc: "Organic algorithms and LLM indexes update weekly. We establish real-time rank dashboards, staying responsive to system changes indefinitely."
-    }
-  ];
-
-  // 5 Step Process
-  const steps = [
-    {
-      step: "01",
-      title: "Discovery",
-      desc: "We deep-dive into your existing digital footprint, semantic indexing patterns, revenue bottlenecks, and brand visibility assets."
-    },
-    {
-      step: "02",
-      title: "Strategy Focus",
-      desc: "Crafting custom intent frameworks, structuring brand citation nodes, listing entities, and planning high performance web upgrades."
-    },
-    {
-      step: "03",
-      title: "Engineered Design",
-      desc: "Designing responsive layouts incorporating modern typography contrast, fluid navigation flows, and conversion focal patterns."
-    },
-    {
-      step: "04",
-      title: "Bespoke Development",
-      desc: "Writing lightweight, optimized TypeScript, React, and customized CSS markup variables ensuring high lighthouse performance metrics."
-    },
-    {
-      step: "05",
-      title: "GEO-AEO Launch",
-      desc: "Structuring JSON-LD entity feeds, executing snippet hooks, registering knowledge indexes, and launching your optimized experience."
     }
   ];
 
@@ -1377,52 +1347,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 9: 5-STEP WORKFLOW TIMELINE */}
-      <section className="max-w-7xl mx-auto px-6 py-12 md:py-24 border-t border-slate-900">
-        <div className="flex flex-col items-center text-center space-y-4 mb-16">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded-full">
-            <TrendingUp className="w-3.5 h-3.5 text-cyan-400 bg-transparent" />
-            <span className="text-xs font-mono tracking-wider text-cyan-300 font-bold uppercase">Our Pipeline</span>
-          </div>
-
-          <h2 className="text-3xl sm:text-5xl font-space font-extrabold text-white tracking-tight">
-            The Strategic Alignment Blueprint
-          </h2>
-
-          <p className="text-slate-400 text-base sm:text-lg max-w-xl">
-            A meticulous 5-step strategic roadmap execution converting conceptual business profiles into definitive cited entities.
-          </p>
-        </div>
-
-        {/* Horizontal Workflow steps on MD screens, vertical on mobile */}
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 relative">
-          
-          {steps.map((st, idx) => (
-            <div 
-              key={idx}
-              className="bg-slate-900/20 border border-slate-900/60 rounded-2xl p-6 flex flex-col justify-between space-y-5 relative"
-            >
-              <div className="space-y-4">
-                <span className="text-4xl font-space font-extrabold text-slate-800 tracking-tighter">
-                  {st.step}
-                </span>
-                <h3 className="text-base font-space font-bold text-white">
-                  {st.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-                  {st.desc}
-                </p>
-              </div>
-              
-              <div className="text-[10px] font-mono tracking-widest text-slate-600 uppercase pt-2 border-t border-slate-900/65">
-                STATUS: READY
-              </div>
-            </div>
-          ))}
-          
-        </div>
-      </section>
-
       {/* SECTION 10: PREMIUM CLIENT TESTIMONIALS */}
       <section className="max-w-7xl mx-auto px-6 py-12 md:py-24">
         <div className="flex flex-col items-center text-center space-y-4 mb-16">
@@ -1695,8 +1619,8 @@ export default function Home() {
           <div className="md:col-span-2 space-y-3">
             <h4 className="text-xs font-mono uppercase tracking-wider text-slate-300 font-bold">Location context</h4>
             <p className="text-xs text-slate-500 leading-relaxed font-mono">
-              Alabama/Georgia, USA<br />
-              Global Remote Consultations<br />
+              Nigeria<br />
+              Available Globally<br />
               Time: 2026-06-04 UTC
             </p>
           </div>
