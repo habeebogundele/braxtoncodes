@@ -435,13 +435,6 @@ export default function Home() {
               Services
             </a>
             <a 
-              href="#explain" 
-              onClick={() => setActiveTab('explain')}
-              className={`hover:text-cyan-400 transition-colors uppercase tracking-wider text-xs ${activeTab === 'explain' ? 'text-cyan-400 font-bold' : 'text-slate-300'}`}
-            >
-              AEO & GEO Explained
-            </a>
-            <a 
               href="#portfolio" 
               onClick={() => setActiveTab('portfolio')}
               className={`hover:text-cyan-400 transition-colors uppercase tracking-wider text-xs ${activeTab === 'portfolio' ? 'text-cyan-400 font-bold' : 'text-slate-400'}`}
@@ -1075,110 +1068,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SECTION 5: AI SEARCH EXPERTISE EXPLAINER ("What is AEO & GEO?") */}
-      <section id="explain" className="max-w-7xl mx-auto px-6 py-12 md:py-24 relative overflow-hidden">
-        
-        {/* Subtle background graphics */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500/5 filter blur-[120px] rounded-full pointer-events-none -z-10"></div>
-
-        <div className="flex flex-col items-center text-center space-y-4 mb-14">
-          <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">
-            <Sparkles className="w-3.5 h-3.5 text-cyan-400 bg-transparent" />
-            <span className="text-xs font-mono tracking-wider text-cyan-300 font-bold uppercase">Future of Search</span>
-          </div>
-          
-          <h2 className="text-3xl sm:text-5xl font-space font-extrabold text-white tracking-tight">
-            Decoding Answer & Generative Optimization (AEO & GEO)
-          </h2>
-          
-          <p className="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl">
-            Standard SEO focuses on clicking list items. AEO and GEO ensure the AI system itself synthesizes and champions your brand as the definitive direct reply.
-          </p>
-        </div>
-
-        {/* Infographic Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch pt-6">
-          
-          {/* Main AEO explainer block */}
-          <div className="lg:col-span-4 bg-slate-900/40 border border-slate-900 rounded-3xl p-6 md:p-8 flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="text-[10px] font-mono text-cyan-400 tracking-wider uppercase bg-cyan-400/5 border border-cyan-500/10 px-2 py-0.5 rounded w-fit font-bold">
-                Level 1: Answer Engine (AEO)
-              </div>
-              <h3 className="text-2xl font-space font-bold text-white">Capture the Snippet Voice</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
-                AEO structures web semantic components to satisfy immediate questions. If someone asks Alexa, Google Nest, or Siri a specific question, the engine retrieves singular answers mapped in highly verified JSON-LD metadata and structural markup.
-              </p>
-            </div>
-            <div className="mt-6 pt-6 border-t border-slate-900/80">
-              <div className="text-[10px] font-mono uppercase tracking-widest text-slate-500 mb-2">Key Channels Mapped:</div>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-[9px] bg-slate-800 text-slate-300 py-1 px-2.5 rounded font-mono">Google Snippets</span>
-                <span className="text-[9px] bg-slate-800 text-slate-300 py-1 px-2.5 rounded font-mono">Siri & Voice Assistant</span>
-                <span className="text-[9px] bg-slate-800 text-slate-300 py-1 px-2.5 rounded font-mono">FAQ structured blocks</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Main GEO explainer block */}
-          <div className="lg:col-span-4 bg-slate-900/40 border border-slate-900 rounded-3xl p-6 md:p-8 flex flex-col justify-between">
-            <div className="space-y-4">
-              <div className="text-[10px] font-mono text-cyan-400 tracking-wider uppercase bg-cyan-400/5 border border-cyan-500/10 px-2 py-0.5 rounded w-fit font-bold">
-                Level 2: Generative Engine (GEO)
-              </div>
-              <h3 className="text-2xl font-space font-bold text-white">Inject Entity References</h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
-                GEO focuses on Large Language Models like ChatGPT, Claude, and Perplexity. They build responses based on massive semantic datasets, indexes, and current web citations. We optimization strategies that ensure your brand is active within Wikidata and categorized inside top priority citation models.
-              </p>
-            </div>
-            <div className="mt-6 pt-6 border-t border-slate-900/80">
-              <div className="text-[10px] font-mono uppercase tracking-widest text-slate-500 mb-2">Key Channels Mapped:</div>
-              <div className="flex flex-wrap gap-2">
-                <span className="text-[9px] bg-slate-800 text-slate-300 py-1 px-2.5 rounded font-mono">ChatGPT Citations</span>
-                <span className="text-[9px] bg-slate-800 text-slate-300 py-1 px-2.5 rounded font-mono">Perplexity Citation Mapping</span>
-                <span className="text-[9px] bg-slate-800 text-slate-300 py-1 px-2.5 rounded font-mono">Gemini Groundings</span>
-              </div>
-            </div>
-          </div>
-
-          {/* AI Search ranking factors explainer card */}
-          <div className="lg:col-span-4 bg-gradient-to-tr from-slate-900 to-slate-950 border border-slate-900 rounded-3xl p-6 md:p-8 flex flex-col justify-between">
-            <div className="space-y-4">
-              <h4 className="text-lg font-space font-bold text-white tracking-tight flex items-center space-x-2">
-                <AlertCircle className="w-5 h-5 text-cyan-400" />
-                <span>AI Search Ranking Factors</span>
-              </h4>
-              <p className="text-slate-400 text-xs leading-relaxed">
-                According to cutting-edge research, generative search indexers prioritize very specific criteria over generic backlinks:
-              </p>
-              
-              <div className="space-y-2 text-xs">
-                <div className="flex items-center justify-between p-2 rounded bg-slate-950 border border-slate-900">
-                  <span className="text-slate-300">Entity Sentiment Score</span>
-                  <span className="text-cyan-400 font-mono font-bold">Primary</span>
-                </div>
-                <div className="flex items-center justify-between p-2 rounded bg-slate-950 border border-slate-900">
-                  <span className="text-slate-300">Structural Authority Schema</span>
-                  <span className="text-cyan-400 font-mono font-bold">Highly Vital</span>
-                </div>
-                <div className="flex items-center justify-between p-2 rounded bg-slate-950 border border-slate-900">
-                  <span className="text-slate-300">Keyword Density/Readability</span>
-                  <span className="text-slate-400 font-mono font-bold">Neutral</span>
-                </div>
-                <div className="flex items-center justify-between p-2 rounded bg-slate-950 border border-slate-900">
-                  <span className="text-slate-300">Information Source Citation Count</span>
-                  <span className="text-cyan-400 font-mono font-bold">Critical</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-[10px] text-slate-500 font-mono mt-6">
-              * Research verified internally from Braxton&apos;s active live database, 2026.
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* SECTION 6: FILTABLE PORTFOLIO SECTION */}
       <section id="portfolio" className="max-w-7xl mx-auto px-6 py-12 md:py-24">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
@@ -1798,7 +1687,6 @@ export default function Home() {
             <ul className="space-y-2 text-xs text-slate-400">
               <li><a href="#about" className="hover:text-cyan-400 transition-colors">Professional Case Bio</a></li>
               <li><a href="#portfolio" className="hover:text-cyan-400 transition-colors">Showcase Work</a></li>
-              <li><a href="#explain" className="hover:text-cyan-400 transition-colors font-semibold">GEO Ranking Science</a></li>
               <li><a href="#audit-tool" className="hover:text-cyan-400 transition-colors text-cyan-400">Live AI Search Scan</a></li>
               <li><a href="#contact" className="hover:text-cyan-400 transition-colors border-b border-dashed border-slate-800">Direct Consultancy</a></li>
             </ul>
