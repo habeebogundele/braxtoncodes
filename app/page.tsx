@@ -887,7 +887,7 @@ export default function Home() {
               {/* Photo layer */}
               <div className="relative w-full h-full rounded-2xl overflow-hidden bg-slate-950/80 border border-slate-800/40">
                 <img 
-                  src="/braxton_profile.png" 
+                  src="/braxton_profile.jpg" 
                   alt="Braxton Codes" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   referrerPolicy="no-referrer"
